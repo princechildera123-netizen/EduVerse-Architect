@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101828" />
+    <title>EduVerse Student Dashboard</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main class="dashboard" aria-labelledby="page-title">
+      <header class="hero">
+        <nav aria-label="Student dashboard navigation">
+          <a class="brand" href="#page-title" aria-label="EduVerse student dashboard">✦ EduVerse</a>
+          <button class="notification-button" type="button" aria-label="Open notifications">🔔 <span>3</span></button>
+        </nav>
+        <div class="hero__content reveal">
+          <p class="eyebrow">Thursday learning command center</p>
+          <h1 id="page-title">Good morning, Maya. Your Learning Twin is ready.</h1>
+          <p>AI has sequenced your day around focus, confidence, deadlines, and predicted exam performance.</p>
+        </div>
+      </header>
+
+      <section class="dashboard-grid" aria-label="Student dashboard modules">
+        <section class="learning-twin reveal" aria-labelledby="learning-twin-title">
+          <div class="orb" aria-hidden="true">🧠</div>
+          <div class="twin-copy">
+            <p class="eyebrow">Learning Twin centerpiece</p>
+            <h2 id="learning-twin-title">Maya's adaptive learning model</h2>
+            <p>Your AI twin detects strong conceptual reasoning, a confidence dip in multi-step algebra, and recommends a 22-minute targeted lesson before class.</p>
+            <div class="twin-metrics" aria-label="Learning twin metrics">
+              <div class="metric-pill"><span>Confidence</span><strong>84%</strong></div>
+              <div class="metric-pill"><span>Predicted exam</span><strong>91%</strong></div>
+              <div class="metric-pill"><span>Attention</span><strong>High</strong></div>
+            </div>
+          </div>
+          <div class="insight-panel">
+            <h3>Recommended next lesson</h3>
+            <p>Master enzyme reaction rates with an interactive lab sprint.</p>
+            <button type="button">▶ Start adaptive lesson</button>
+            <dl>
+              <div><dt>Strengths</dt><dd>Pattern recognition, lab analysis</dd></div>
+              <div><dt>Weaknesses</dt><dd>Equation setup under time pressure</dd></div>
+            </dl>
+          </div>
+        </section>
+
+        <section class="card coach-card reveal"><div class="card__header"><div><p class="eyebrow">Next best action</p><h2>AI Study Coach</h2></div><span class="icon-bubble">✨</span></div><p class="callout">⚡ Review algebra error patterns now to raise Friday readiness by 9%.</p><button class="primary-action" type="button">Open coach plan</button></section>
+        <section class="card reveal"><div class="card__header"><h2>Today's Classes</h2><span class="icon-bubble">🗓️</span></div><div class="timeline"><article><time>09:00</time><div><strong>Quantum Biology</strong><span>Holo Lab 4 • Live in 12m</span></div></article><article><time>11:30</time><div><strong>World Systems</strong><span>Studio B • Prep ready</span></div></article><article><time>14:00</time><div><strong>Applied Algebra</strong><span>Pod 2 • AI notes</span></div></article></div></section>
+        <section class="card reveal"><div class="card__header"><h2>Homework</h2><span class="icon-bubble">📚</span></div><div class="stack-list"><article><div><strong>Cellular energy simulation</strong><span>Biology • Due Today</span></div><div class="progress" aria-label="Cellular energy simulation 74%"><span style="width: 74%"></span></div></article><article><div><strong>Systems map reflection</strong><span>History • Due Tomorrow</span></div><div class="progress" aria-label="Systems map reflection 38%"><span style="width: 38%"></span></div></article><article><div><strong>Adaptive equations set</strong><span>Math • Due Fri</span></div><div class="progress" aria-label="Adaptive equations set 91%"><span style="width: 91%"></span></div></article></div></section>
+        <section class="card reveal"><div class="card__header"><h2>Upcoming Exams</h2><span class="icon-bubble">🔬</span></div><div class="exam-grid"><article><strong>Biology</strong><span>Jul 22</span><div class="progress" aria-label="Biology readiness 86%"><span style="width: 86%"></span></div><small>86% ready</small></article><article><strong>Algebra</strong><span>Jul 25</span><div class="progress" aria-label="Algebra readiness 72%"><span style="width: 72%"></span></div><small>72% ready</small></article></div></section>
+
+        <section class="card wide-card reveal"><div class="card__header"><div><p class="eyebrow">Beautiful charts</p><h2>Progress Analytics</h2></div><span class="icon-bubble">📈</span></div><div class="chart analytics-chart" role="img" aria-label="Focus and mastery trend chart"><span style="height: 72%"></span><span style="height: 81%"></span><span style="height: 76%"></span><span style="height: 88%"></span><span style="height: 84%"></span><span style="height: 91%"></span></div></section>
+        <section class="card reveal"><div class="card__header"><h2>AI Quiz Generator</h2><span class="icon-bubble">✅</span></div><div class="donut" role="img" aria-label="Quiz balance: recall 40%, apply 35%, explain 25%"><span>10 Q</span></div><button class="secondary-action" type="button">Generate quiz</button></section>
+        <section class="card reveal"><div class="card__header"><h2>AI Flashcards</h2><span class="icon-bubble">🧠</span></div><div class="flashcard"><span>Next card</span><strong>Explain activation energy in one sentence.</strong></div><button class="secondary-action" type="button">Practice deck</button></section>
+        <section class="card reveal"><div class="card__header"><h2>Study Timer</h2><span class="icon-bubble">⏱️</span></div><div class="timer-display">22:00</div><p>Focus sprint tuned to your attention curve.</p></section>
+        <section class="card reveal"><div class="card__header"><h2>Daily Streak</h2><span class="icon-bubble">🔥</span></div><div class="streak"><strong>14</strong><span>days learning above goal</span></div></section>
+        <section class="card reveal"><div class="card__header"><h2>Achievement Badges</h2><span class="icon-bubble">🏆</span></div><div class="badges"><span>Deep Focus</span><span>7-Day Streak</span><span>Lab Leader</span><span>Quiz Ace</span></div></section>
+        <section class="card reveal"><div class="card__header"><h2>Notifications</h2><span class="icon-bubble">🔔</span></div><ul class="notifications"><li>Coach adjusted your Biology lesson.</li><li>Group lab starts in 12 minutes.</li><li>New teacher feedback on essay draft.</li></ul></section>
+        <section class="card wide-card reveal"><div class="card__header"><h2>Weekly Skill Balance</h2><span class="icon-bubble">📊</span></div><div class="chart skill-chart" role="img" aria-label="Weekly skill balance bar chart"><span style="height: 64%"></span><span style="height: 68%"></span><span style="height: 73%"></span><span style="height: 78%"></span><span style="height: 83%"></span><span style="height: 87%"></span></div></section>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
